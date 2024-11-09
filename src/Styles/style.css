@@ -1,0 +1,134 @@
+/* General Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #222;
+  color: #fff;
+  display: flex;
+  flex-direction: column;        
+  min-height: 100vh;             
+  justify-content: space-between; 
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #f4c542;
+  text-align: center;
+}
+
+button {
+  background-color: #28a745;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+/*List Contacts*/
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #333;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit{
+  background-color: #2f6fa7;
+}
+
+.delete {
+  background-color: #dc3545;
+  margin-left: 10px;
+}
+
+.edit:hover{
+  background-color: #2f41a7;
+}
+
+.delete:hover {
+  background-color: #c82333;
+}
+
+/*Contact Form */
+#contact-form {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+input, select {
+  background-color: #444;
+  border: 1px solid #f4c542;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+input:focus, select:focus {
+  border-color: #f4c542;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #777;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  font-size: 0.8rem;
+  margin-top: auto;
+}
+.footer-item {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li .edit, li .delete {
+    margin-left: 0;
+  }
+
+  #contact-form {
+    width: 90%; 
+  }
+}
