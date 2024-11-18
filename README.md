@@ -1,12 +1,5 @@
 # JavaScript  Challenge  Natalia  Mas
 
-## Thank You! :D
-I would like to express my sincere gratitude for the opportunity to demonstrate my skills through this project. 
-
-I hope this project provides a clear example of my work ^^
-
----
-
 ## How to Run the Application
 
 To run this project locally, follow the steps below:
